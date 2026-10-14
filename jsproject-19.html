@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <h1 id="app-title">My Bank</h1>
+        <p class="subtitle">Your money, your control.</p>
+
+        <div id="balance-box">
+            <span id="balance-label">Available Balance</span>
+            <span id="balance">₹1000</span>
+        </div>
+
+        <div id="entry-box">
+            <label id="amount-label" for="amount">Enter Amount (₹)</label>
+            <input type="number" id="amount" placeholder="e.g. 500" min="1">
+        </div>
+
+        <div id="button-box">
+            <button class="action credit" id="credit-btn">＋ Credit</button>
+            <button class="action debit" id="debit-btn">− Debit</button>
+        </div>
+
+        <p id="note">💡 Enter an amount and select Credit or Debit.</p>
+        <p id="message" aria-live="polite"></p>
+
+    </div>
+
+</body>
+
+</html>
